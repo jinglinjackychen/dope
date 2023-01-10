@@ -17,4 +17,4 @@ else
 fi
 
 source /opt/ros/noetic/setup.bash
-source ~/DOPE_ws/devel/setup.bash
+source ~/dope/catkin_ws/devel/setup.bash
