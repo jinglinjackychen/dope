@@ -54,7 +54,7 @@ docker run \
     -e QT_X11_NO_MITSHM=1 \
     -e XAUTHORITY=$XAUTH \
     -v "$XAUTH:$XAUTH" \
-    -v "/home/$USER/dope:/home/kl/dope" \
+    -v "/home/$USER/dope:/home/dope/dope" \
     -v "/tmp/.X11-unix:/tmp/.X11-unix" \
     -v "/etc/localtime:/etc/localtime:ro" \
     -v "/dev:/dev" \
