@@ -8,7 +8,7 @@ ENV ROS_DISTRO noetic
 ###################################### user #####################################
 
 ENV SHELL=/bin/bash \
-    USER=kl \
+    USER=dope \
     UID=1000 \
     LANG=en_US.UTF-8 \
     LANGUAGE=en_US.UTF-8
