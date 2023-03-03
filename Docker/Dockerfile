@@ -216,7 +216,7 @@ RUN cd ${HOME} && git clone https://github.com/pybind/pybind11.git \
 ##################################### setting #####################################
 
 RUN chown -R ${USER}:${USER} ${HOME}/
-RUN echo "kl ALL=(ALL)  ALL" > /etc/sudoers
+RUN echo "dope ALL=(ALL)  ALL" > /etc/sudoers
 
 RUN echo "source /opt/ros/noetic/setup.bash" >> ${HOME}/.bashrc
 
