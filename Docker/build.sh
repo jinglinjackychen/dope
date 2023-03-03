@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build --rm -t kuolunwang/thesis:dope .
+docker build --rm -t jackychen777/dope:latest .
