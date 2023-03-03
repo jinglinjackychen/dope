@@ -59,12 +59,12 @@ docker run \
     -v "/etc/localtime:/etc/localtime:ro" \
     -v "/dev:/dev" \
     -v "/var/run/docker.sock:/var/run/docker.sock" \
-    -w "/home/kl/dope" \
+    -w "/home/dope/dope" \
     --user "root:root" \
     --name pnp \
     --network host \
     --privileged \
     --security-opt seccomp=unconfined \
     $DOCKER_OPTS \
-    kuolunwang/thesis:dope \
+    jackychen777/dope:latest \
     $BASH_OPTION
