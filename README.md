@@ -25,9 +25,11 @@
 ## How to run
 On LoCoBot
 ```
-    $ source environment.sh 192.168.50.2 192.168.50.2
-    $ roslaunch realsense2_camera rs_rgbd.launch
-    $ roslaunch rosbridge_server rosbridge_websocket.launch
+    $ cd Docker && source docker_run.sh cpu
+    Docker$ cd catkin_ws && catkin_make
+    Docker$ source environment.sh 192.168.50.2 192.168.50.2
+    Docker$ roslaunch realsense2_camera rs_rgbd.launch
+    Docker$ roslaunch rosbridge_server rosbridge_websocket.launch
 ```
 On DOPE PC
 ```
