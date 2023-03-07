@@ -14,7 +14,7 @@
 |VR PC          |Yes            |10.0.0.3                   |
 |DOPE PC        |Yes            |192.168.50.3               |
 
-![Teaser](figures/VR_DOPE.PNG)
+![Teaser](figures/network.PNG)
 ---
 
 ## Building docker image
