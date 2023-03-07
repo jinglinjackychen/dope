@@ -8,6 +8,8 @@
 *You can run this code on a GPU computer and CPU computer, but if you want to execute DOPE program, please change GPU computer to run*
 
 ---
+![Teaser](figures/VR_DOPE.PNG)
+---
 
 ## Building docker image
 ```
