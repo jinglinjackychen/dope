@@ -22,12 +22,12 @@
     $ cd Docker && source build.sh
 ```
 
-## **Download weights**
+## Download weights
 
 Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8tOWXGVxi4ETlLEAgmcg) and save them to the `weights` folder, *i.e.*, `~/catkin_ws/src/Deep_Object_Pose/weights/`.
 
 ## How to run
-On LoCoBot
+On LoCoBot, **make sure LoCoBot connect to VPN server**
 ```
     $ source environment.sh 192.168.50.2 192.168.50.2
     $ roslaunch realsense2_camera rs_rgbd.launch
