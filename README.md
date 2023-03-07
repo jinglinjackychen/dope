@@ -16,7 +16,7 @@
 
 ## How to run
 ```
-    $ cd Docker && source docker_run.sh [gpu or cpu]
+    $ cd Docker && source docker_run.sh gpu
     Docker$ cd catkin_ws && catkin_make
     Docker$ source environment.sh ros_master_ip ros_ip
     Docker$ rosrun image_transport republish compressed in:=/camera/color/image_raw raw out:=/dope/image_raw
