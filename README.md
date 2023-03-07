@@ -29,9 +29,11 @@ Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8tOWXGVxi4E
 ## How to run
 On LoCoBot, **make sure LoCoBot connect to VPN server**
 ```
-    $ source environment.sh 192.168.50.2 192.168.50.2
-    $ roslaunch realsense2_camera rs_rgbd.launch
-    $ roslaunch rosbridge_server rosbridge_websocket.launch
+    $ cd Docker && source docker_run.sh cpu
+    Docker$ cd catkin_ws && catkin_make
+    Docker$ source environment.sh 192.168.50.2 192.168.50.2
+    Docker$ roslaunch realsense2_camera rs_rgbd.launch
+    Docker$ roslaunch rosbridge_server rosbridge_websocket.launch
 ```
 On DOPE PC
 ```
@@ -45,4 +47,4 @@ On DOPE PC
 ## If you want to enter same container
 ```
     $ cd Docker && source docker_join.sh
-    Docker$ source environment.sh 192.168.50.2 192.168.50.3
+    Docker$ source environment.sh ros_master_ip ros_ip
