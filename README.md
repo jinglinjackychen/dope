@@ -8,6 +8,12 @@
 *You can run this code on a GPU computer and CPU computer, but if you want to execute DOPE program, please change GPU computer to run*
 
 ---
+|Device         |GPU            |IP                         |
+|:-------------:|:-------------:|:-------------------------:|
+|LoCoBot        |No             |192.168.50.X and 10.0.0.X  |
+|VR PC          |Yes            |10.0.0.X                   |
+|DOPE PC        |Yes            |192.168.50.X               |
+
 ![Teaser](figures/VR_DOPE.PNG)
 ---
 
