@@ -23,9 +23,8 @@
 ```
 
 ## **Download weights**
-```
-    Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8tOWXGVxi4ETlLEAgmcg) and save them to the `weights` folder, *i.e.*, `~/catkin_ws/src/Deep_Object_Pose/weights/`.
-```
+
+Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8tOWXGVxi4ETlLEAgmcg) and save them to the `weights` folder, *i.e.*, `~/catkin_ws/src/Deep_Object_Pose/weights/`.
 
 ## How to run
 On LoCoBot
