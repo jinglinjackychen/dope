@@ -110,6 +110,7 @@ RUN apt-get -o Acquire::ForceIPv4=true update && apt-get -o Acquire::ForceIPv4=t
     ros-$ROS_DISTRO-dynamixel-sdk \
     ros-$ROS_DISTRO-franka-* \
     ros-$ROS_DISTRO-vision-msgs \
+    ros-$ROS_DISTRO-rosbridge-suite \
     python3-rosdep \
     python3-rosinstall \
     python3-rosinstall-generator \
