@@ -6,4 +6,4 @@
 	url = https://github.com/ros-perception/vision_opencv.git
 [submodule "catkin_ws/src/Deep_Object_Pose"]
 	path = catkin_ws/src/Deep_Object_Pose
-	url = git@github.com:jinglinjackychen/Deep_Object_Pose.git
+	url = https://github.com/jinglinjackychen/Deep_Object_Pose.git
