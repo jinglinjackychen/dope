@@ -2,6 +2,7 @@
 
 from arg_robotics_tools import websocket_rosbridge as socket
 from sensor_msgs.msg import CompressedImage
+from geometry_msgs.msg import PoseStamped
 import rospy
 import base64
 
