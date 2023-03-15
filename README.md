@@ -27,7 +27,7 @@
 Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8tOWXGVxi4ETlLEAgmcg) and save them to the `weights` folder, *i.e.*, `~/catkin_ws/src/Deep_Object_Pose/weights/`.
 
 ## How to run
-On LoCoBot, **make sure LoCoBot connect to VPN server**
+On LoCoBot
 ```
     $ cd Docker && source docker_run.sh cpu
     Docker$ cd catkin_ws && catkin_make
@@ -39,7 +39,9 @@ On DOPE PC
 ```
     $ cd Docker && source docker_run.sh gpu
     Docker$ cd catkin_ws && catkin_make
-    Docker$ source environment.sh 192.168.50.2 192.168.50.3
+    Docker$ source environment.sh 192.168.50.3 192.168.50.3
+    Docker$ roslaunch rosbridge_server rosbridge_websocket.launch
+    Docker$ rosrun topic_rosbridge image_rosbridge.py
     Docker$ rosrun image_transport republish compressed in:=/camera/color/image_raw raw out:=/dope/image_raw
     Docker$ roslaunch dope dope.launch
 ```
