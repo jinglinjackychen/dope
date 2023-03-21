@@ -181,7 +181,9 @@ RUN pip3 install \
     tensorflow \
     tqdm \
     modern_robotics \
-    pyrr
+    pyrr \
+    roslibpy \
+    arg_robotics_tools
 
 ##################################### Pytorch ######################################
 
