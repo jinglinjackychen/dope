@@ -95,9 +95,9 @@ RUN apt-get -o Acquire::ForceIPv4=true update && apt-get -o Acquire::ForceIPv4=t
     ros-$ROS_DISTRO-rosserial-arduino \
     ros-$ROS_DISTRO-rosserial \
     ros-$ROS_DISTRO-socketcan-interface \
-    ros-$ROS_DISTRO-moveit \
-    ros-$ROS_DISTRO-moveit-planners-ompl \
-    ros-$ROS_DISTRO-moveit-* \
+    # ros-$ROS_DISTRO-moveit \
+    # ros-$ROS_DISTRO-moveit-planners-ompl \
+    # ros-$ROS_DISTRO-moveit-* \
     ros-$ROS_DISTRO-ur-* \
     ros-$ROS_DISTRO-velocity-controllers \
     ros-$ROS_DISTRO-joint-state-controller \
@@ -142,7 +142,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # set the version of the realsense library
-ENV LIBREALSENSE_VERSION 2.48.0
+
+ENV LIBREALSENSE_VERSION 2.50.0
 RUN cd ${HOME} && git clone https://github.com/IntelRealSense/librealsense.git \
     && cd librealsense \
     && git checkout v${LIBREALSENSE_VERSION} \
@@ -194,19 +195,19 @@ RUN python3 -m pip install \
 
 ####################################### procman ###########################################
 
-RUN cd ${HOME} && git clone https://github.com/lcm-proj/lcm \
-    && cd lcm \
-    && mkdir build \
-    && cd build \
-    && cmake .. \
-    && make install
+# RUN cd ${HOME} && git clone https://github.com/lcm-proj/lcm \
+#     && cd lcm \
+#     && mkdir build \
+#     && cd build \
+#     && cmake .. \
+#     && make install
 
-RUN cd ${HOME} && git clone https://github.com/ARG-NCTU/procman \
-    && cd procman \
-    && mkdir build \
-    && cd build \
-    && cmake .. \
-    && make install
+# RUN cd ${HOME} && git clone https://github.com/ARG-NCTU/procman \
+#     && cd procman \
+#     && mkdir build \
+#     && cd build \
+#     && cmake .. \
+#     && make install
 
 ##################################### pybind11 ######################################
 
